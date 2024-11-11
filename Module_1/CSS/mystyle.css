@@ -1,0 +1,385 @@
+* {
+  box-sizing: border-box;
+}
+
+.message {
+  background-color: #f8d7da;
+  color: black;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+}
+
+.header {
+  padding: 15px;
+  background: #23DBB4;
+}
+
+#Navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  float: right;
+}
+
+#Navbar li.active b {
+  color: #23DBB4; /* Change this to the desired text color */
+}
+
+#liNav {
+  float: left;
+  display: flex;
+}
+
+li b {
+  display: block;
+  color: black;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 3.2;
+}
+
+li b:hover:not(.active) {
+  color: #23DBB4;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 30%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  
+  
+}
+
+.column1 {
+  float: right;
+  width: 17%;
+  padding: 20px;
+}
+
+.button {
+  display: flex;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #23DBB4; 
+  color: white;
+  border: 1px solid #23DBB4;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #23DBB4; 
+}
+
+.button1 {
+  display: flex;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #23DBB4; 
+  color: white;
+  border: 1px solid #23DBB4;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  float: left;
+}
+
+.button1:hover {
+  background-color: #23DBB4; 
+}
+
+.button2 {
+  display: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #23DBB4; 
+  color: white;
+  border: 1px solid #23DBB4;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+
+}
+
+.button2:hover {
+  background-color: #23DBB4; 
+}
+
+.all-browsers {
+  background-color: white(224, 224, 224);
+  height: auto;
+  position: relative;
+  margin: 0;
+  text-align: center;
+  padding: 80px;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #23DBB4;
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 3px;
+}
+
+.h1{
+  margin-top:0%;
+  text-align: center;
+  font-family: "Monaco", monospace;
+}
+
+input[type=text],select {
+  margin-top: 20px;
+  border-radius: 4px;
+  width: 55%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background-color: #D9D9D9;
+  color: black;
+  resize: vertical;
+}
+
+input[type=password] {
+  margin-top: 20px;
+  border-radius: 4px;
+  width: 55%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background-color: #D9D9D9;
+  color: black;
+  resize: vertical;
+}
+
+input[type=submit]{
+  margin-top: 20px;
+  border-radius: 4px;
+  width: 20%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background-color: #23DBB4;
+  color: black;
+  resize: vertical;
+}
+
+input[type=delete]{
+  margin-top: 20px;
+  border-radius: 4px;
+  width: 20%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background-color: #23DBB4;
+  color: black;
+  resize: vertical;
+}
+
+input[type=email]{
+  margin-top: 20px;
+  border-radius: 4px;
+  width: 55%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background-color: #D9D9D9;
+  color: black;
+  resize: vertical;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: auto; /* only for demonstration, should be removed */
+  background: #E2EFFF;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.centernav {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: white;
+  height: auto; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+th,td{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+table.userlistTable{
+  width: 90%;
+  border: 2px solid;
+  border-radius: 4px;
+  border-collapse: collapse;
+  background-color: #23DBB4;
+}
+
+table.userlistTable th{
+  border: 2px solid;
+  border-radius: 4px;
+  border-collapse: collapse;
+  background-color: #23DBB4;
+}
+
+
+table.calTable {
+  width: 70%;
+  border: 2px solid;
+  border-radius: 4px;
+  border-collapse: collapse;
+  
+}
+
+table.calTable th {
+  border: 2px solid;
+  border-radius: 4px;
+  border-collapse: collapse;
+  background-color: #23DBB4;
+  
+}
+
+table.calTable td {
+  border: 2px solid;
+  border-radius: 4px;
+  border-collapse: collapse;
+  background-color: white;
+  
+}
+table.userlistTable td{
+  border: 2px solid;
+  border-radius: 4px;
+  border-collapse: collapse;
+  background-color: #EFFAFF;
+}
+
+table.resultTable{
+  width: 60%;
+  border:none;
+}
+
+.profile {
+  margin-bottom: 15px;
+}
+
+.profile label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profile input {
+  margin-top: 20px;
+  border-radius: 4px;
+  width: 28%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background-color: #D9D9D9;
+  color: black;
+  resize: vertical;
+}
+
+/* Adjust styling for readonly inputs */
+.profile input[readonly] {
+  width: 28%;
+  background-color: #D9D9D9;
+  cursor: not-allowed;
+}
+
+/* Style the form for better presentation */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.profile {
+  margin-bottom: 20px;
+}
+
+/* Style for the file input */
+input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.select {
+  width: 55%;
+  background-color: #D9D9D9;
+}
+
+.select1 {
+  width: 28%;
+  background-color: #D9D9D9;
+}
+

@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 15px;
+  background: #23DBB4;
+}
+
+#Navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  float: right;
+}
+
+#Navbar li.active b {
+  color: #23DBB4; /* Change this to the desired text color */
+}
+
+#liNav {
+  float: left;
+  display: flex;
+}
+
+li b {
+  display: block;
+  color: black;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 3.2;
+}
+
+li b:hover:not(.active) {
+  color: #23DBB4;
+}
+
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#totalAmount {
+   font-size: 30px;
+   font-weight: bold;
+   color: black;
+   margin-top: 130px;
+   margin-bottom: 0;
+   margin-right: 20px;
+   float: right;
+    }
+
+.footer {
+  width: 100%;
+  display: flex;
+  background-color: #23DBB4;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 3px;
+  margin-top: 70px; /* Adjust the margin-top value as needed */
+}
+
+.h1 {
+  margin-top: 0%;
+  text-align: center;
+  font-family: "Monaco", monospace;
+}
+
+.h3 {
+  text-align: left;
+  font-family: "Monaco", monospace;
+}
+
+.button {
+  border-radius: 4px;
+  width: 250px;
+  padding: 20px 25px;
+  font-size: 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background-color: #23DBB4;
+  color: black;
+  cursor: pointer;
+  resize: vertical;
+  float: right;
+  text-align: center;
+  margin-left: 1000px;
+  margin-right: 20px;
+  margin-top: auto;
+  margin-bottom: 10px; /* Adjust the margin value as needed */
+}
+
+.updateButton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #23DBB4; 
+  color: black;
+  border: 1px solid #23DBB4;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+  .article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: black;
+  height: auto; /* only for demonstration, should be removed */
+}
+
+.all-browsers {
+  background-color: white(224, 224, 224);
+  height: auto;
+  position: relative;
+  margin: 0;
+  text-align: center;
+  padding: 80px;
+}
+
+
+/* Create two columns/boxes that float next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: auto;
+  /* only for demonstration, should be removed */
+  background: #E2EFFF;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+table{
+  margin-left: 0;
+  margin-right: auto;
+  text-align: center;
+  font-size: 50px;
+}
+
+
+th,td{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 50px;
+}
+
+.button1 {
+  display: flex;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #23DBB4; 
+  color: white;
+  border: 1px solid #23DBB4;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button1:hover {
+  background-color: #23DBB4; 
+}
+
+
+        /* Add your custom styles for the receipt */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .receipt {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .receipt-header {
+            text-align: center;
+        }
+
+        .receipt-details {
+            margin-top: 20px;
+        }
+
+        .receipt-details p {
+            margin: 5px 0;
+        }
+
+        .receipt-items {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        .receipt-items th,
+        .receipt-items td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .receipt-total {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        
